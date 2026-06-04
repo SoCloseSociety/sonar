@@ -256,7 +256,17 @@ export function GlobeDetail({ event, onClose }: Props) {
                     ) : (
                       <MapPin size={7} className="text-slate-400" />
                     );
-                    return values.slice(0, 4).map((v: string) => (
+                    // Coerce items defensively — LLM sometimes emits {name, credibility} objects.
+                    const strs = (values as unknown[]).flatMap(v => {
+                      if (typeof v === 'string') return [v];
+                      if (v && typeof v === 'object') {
+                        const o = v as Record<string, unknown>;
+                        const s = o.name ?? o.value ?? o.label ?? o.text;
+                        return typeof s === 'string' ? [s] : [];
+                      }
+                      return [];
+                    });
+                    return strs.slice(0, 4).map((v: string) => (
                       <span key={`${type}-${v}`} className="inline-flex items-center gap-0.5 text-[8px] font-mono text-slate-300 bg-white/[0.04] border border-white/[0.06] rounded px-1.5 py-0.5">
                         {icon} {v}
                       </span>

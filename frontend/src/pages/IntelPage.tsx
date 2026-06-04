@@ -34,10 +34,26 @@ interface IntelEvent {
   country: string;
   summary: string;
   keywords: string[];
-  entities: Record<string, string[]>;
+  entities: Record<string, unknown[]>;  // backend may emit objects; coerced in render
   latitude: number | null;
   longitude: number | null;
   created_at: string;
+}
+
+// Coerce LLM-emitted entity items (which may be objects like {name, credibility}) into strings.
+function entityList(raw: unknown): string[] {
+  if (!Array.isArray(raw)) return [];
+  const out: string[] = [];
+  for (const item of raw) {
+    if (typeof item === 'string' && item.trim()) {
+      out.push(item);
+    } else if (item && typeof item === 'object') {
+      const o = item as Record<string, unknown>;
+      const v = o.name ?? o.value ?? o.label ?? o.text;
+      if (typeof v === 'string' && v.trim()) out.push(v);
+    }
+  }
+  return out;
 }
 
 interface SensitiveZone {
@@ -136,16 +152,16 @@ function EventRow({ event }: { event: IntelEvent }) {
             <Clock size={6} />{ago}
           </span>
         </div>
-        {/* Entities */}
+        {/* Entities (defensive: LLM may emit objects like {name, credibility}) */}
         {event.entities && (
           <div className="flex items-center gap-1 mt-1 flex-wrap">
-            {(event.entities.people ?? []).slice(0, 2).map(p => (
+            {entityList(event.entities.people).slice(0, 2).map(p => (
               <span key={p} className="text-[6px] font-mono text-[#00CFEB] bg-[#00CFEB]/08 border border-[#00CFEB]/20 px-1 py-px">{p}</span>
             ))}
-            {(event.entities.organizations ?? []).slice(0, 2).map(o => (
+            {entityList(event.entities.organizations).slice(0, 2).map(o => (
               <span key={o} className="text-[6px] font-mono text-[#FF6D2A] bg-[#FF6D2A]/08 border border-[#FF6D2A]/20 px-1 py-px">{o}</span>
             ))}
-            {(event.entities.countries ?? []).slice(0, 2).map(c => (
+            {entityList(event.entities.countries).slice(0, 2).map(c => (
               <span key={c} className="text-[6px] font-mono text-[#4E6070] bg-[#4E6070]/08 border border-[#4E6070]/20 px-1 py-px">{c}</span>
             ))}
           </div>

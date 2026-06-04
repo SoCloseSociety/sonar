@@ -15,8 +15,22 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
+def _coerce_entity_value(v) -> str | None:
+    """LLM occasionally emits entities as objects like {name, credibility}; flatten to str."""
+    if v is None:
+        return None
+    if isinstance(v, str):
+        return v
+    if isinstance(v, dict):
+        for k in ("name", "value", "label", "text"):
+            if isinstance(v.get(k), str):
+                return v[k]
+        return None
+    return str(v)
+
+
 def _normalize_entities(raw: dict | None) -> dict:
-    """Ensure entities always has canonical keys and no 'assets_impact' typo."""
+    """Ensure entities always has canonical keys, no 'assets_impact' typo, and all values are strings."""
     if not raw or not isinstance(raw, dict):
         return {"people": [], "countries": [], "organizations": [], "assets_impacted": []}
     out = dict(raw)
@@ -25,10 +39,13 @@ def _normalize_entities(raw: dict | None) -> dict:
         out["assets_impacted"] = out.pop("assets_impact")
     elif "assets_impact" in out:
         out.pop("assets_impact")
-    # Ensure canonical keys exist
+    # Ensure canonical keys exist + coerce values to strings (LLM can return objects)
     for key in ("people", "countries", "organizations", "assets_impacted"):
-        if key not in out:
+        items = out.get(key)
+        if not isinstance(items, list):
             out[key] = []
+            continue
+        out[key] = [s for s in (_coerce_entity_value(x) for x in items) if s]
     return out
 
 

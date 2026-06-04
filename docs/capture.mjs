@@ -12,7 +12,7 @@ const VIEWPORT = { width: 1920, height: 1080 };
 const wait = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function login(page) {
-  await page.goto(`${BASE}/login`, { waitUntil: 'networkidle' });
+  await page.goto(`${BASE}/login`, { waitUntil: 'domcontentloaded', timeout: 15000 });
   // Best-effort: locate the email/password fields by their visible labels or placeholders.
   const email = page.getByPlaceholder(/email/i).or(page.locator('input[type="email"]')).first();
   const pwd   = page.getByPlaceholder(/password|mot de passe/i).or(page.locator('input[type="password"]')).first();
@@ -35,7 +35,7 @@ async function shot(page, path, opts = {}) {
   const page = await ctx.newPage();
 
   // Login page — capture as-is for the "first run" view
-  await page.goto(`${BASE}/login`, { waitUntil: 'networkidle' });
+  await page.goto(`${BASE}/login`, { waitUntil: 'domcontentloaded', timeout: 15000 });
   await wait(1500);
   await shot(page, 'login.png');
 
@@ -43,19 +43,19 @@ async function shot(page, path, opts = {}) {
   await login(page);
 
   // Globe (default route)
-  await page.goto(`${BASE}/`, { waitUntil: 'networkidle' });
+  await page.goto(`${BASE}/`, { waitUntil: 'domcontentloaded', timeout: 15000 });
   await wait(6000);  // let the globe + textures finish loading
   await shot(page, 'globe.png');
 
   // Intel page
-  await page.goto(`${BASE}/intel`, { waitUntil: 'networkidle' }).catch(() => {});
+  await page.goto(`${BASE}/intel`, { waitUntil: 'domcontentloaded', timeout: 15000 }).catch(() => {});
   await wait(3000);
   await shot(page, 'intel.png');
 
   // Dashboard (might be at /dashboard or /)
   for (const path of ['/dashboard', '/feed', '/']) {
     try {
-      await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });
+      await page.goto(`${BASE}${path}`, { waitUntil: 'domcontentloaded', timeout: 15000 });
       await wait(2500);
       await shot(page, 'dashboard.png');
       break;
@@ -63,11 +63,11 @@ async function shot(page, path, opts = {}) {
   }
 
   // Signals / markets
-  await page.goto(`${BASE}/markets`, { waitUntil: 'networkidle' }).catch(() => {});
+  await page.goto(`${BASE}/markets`, { waitUntil: 'domcontentloaded', timeout: 15000 }).catch(() => {});
   await wait(2000);
   await shot(page, 'markets.png');
 
-  await page.goto(`${BASE}/signals`, { waitUntil: 'networkidle' }).catch(() => {});
+  await page.goto(`${BASE}/signals`, { waitUntil: 'domcontentloaded', timeout: 15000 }).catch(() => {});
   await wait(2000);
   await shot(page, 'signals.png');
 

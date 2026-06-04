@@ -18,6 +18,20 @@ from app.redis_client import cache_get, cache_set
 router = APIRouter()
 
 
+def _coerce_entity_value(v) -> str | None:
+    """LLM occasionally emits entities as objects like {name, credibility}; flatten to str."""
+    if v is None:
+        return None
+    if isinstance(v, str):
+        return v
+    if isinstance(v, dict):
+        for k in ("name", "value", "label", "text"):
+            if isinstance(v.get(k), str):
+                return v[k]
+        return None
+    return str(v)
+
+
 def _normalize_entities(raw) -> dict:
     if not raw or not isinstance(raw, dict):
         return {"people": [], "countries": [], "organizations": [], "assets_impacted": []}
@@ -27,8 +41,11 @@ def _normalize_entities(raw) -> dict:
     elif "assets_impact" in out:
         out.pop("assets_impact")
     for key in ("people", "countries", "organizations", "assets_impacted"):
-        if key not in out:
+        items = out.get(key)
+        if not isinstance(items, list):
             out[key] = []
+            continue
+        out[key] = [s for s in (_coerce_entity_value(x) for x in items) if s]
     return out
 
 
