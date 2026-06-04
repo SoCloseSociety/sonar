@@ -1,0 +1,34 @@
+{
+  "MILITARY_CONFLICT": {
+    "keywords": ["war", "conflict", "invasion", "military", "ceasefire", "troops"],
+    "market_tags": ["ukraine", "russia", "nato", "war", "conflict", "military"]
+  },
+  "NUCLEAR": {
+    "keywords": ["nuclear", "IAEA", "enrichment", "test", "warhead"],
+    "market_tags": ["nuclear", "iran", "north korea", "weapons"]
+  },
+  "ELECTION": {
+    "keywords": ["election", "vote", "president", "candidate", "poll"],
+    "market_tags": ["election", "president", "congress", "vote", "politics"]
+  },
+  "SANCTIONS": {
+    "keywords": ["sanctions", "embargo", "OFAC", "trade war"],
+    "market_tags": ["sanctions", "trade", "tariff", "embargo"]
+  },
+  "ECONOMIC_POLICY": {
+    "keywords": ["interest rate", "inflation", "recession", "fed"],
+    "market_tags": ["economy", "fed", "interest rate", "inflation", "recession"]
+  },
+  "NATURAL_DISASTER": {
+    "keywords": ["earthquake", "hurricane", "tsunami", "wildfire", "flood"],
+    "market_tags": ["disaster", "weather", "climate", "earthquake"]
+  },
+  "CRYPTO_MARKET": {
+    "keywords": ["bitcoin", "ethereum", "crypto", "SEC", "regulation"],
+    "market_tags": ["crypto", "bitcoin", "ethereum", "defi"]
+  },
+  "ENERGY_COMMODITIES": {
+    "keywords": ["oil", "OPEC", "gas", "energy", "pipeline"],
+    "market_tags": ["oil", "energy", "opec", "gas", "commodity"]
+  }
+}

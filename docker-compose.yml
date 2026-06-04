@@ -1,0 +1,151 @@
+# ╔═══════════════════════════════════════════════════════════╗
+# ║  SONAR — Default compose (balanced for Mac testing)     ║
+# ║  Usage: docker compose up -d                            ║
+# ║                                                         ║
+# ║  For dev with hot-reload:                               ║
+# ║    docker compose -f docker-compose.dev.yml up -d       ║
+# ║                                                         ║
+# ║  For production server:                                 ║
+# ║    docker compose -f docker-compose.prod.yml up -d      ║
+# ╚═══════════════════════════════════════════════════════════╝
+
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    platform: linux/amd64
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-sonar}
+      POSTGRES_USER: ${POSTGRES_USER:-sonar}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sonar_secret}
+    ports:
+      - "5433:5432"
+    deploy:
+      resources:
+        limits:
+          memory: 384M
+    command: >
+      postgres
+        -c shared_buffers=128MB
+        -c work_mem=8MB
+        -c maintenance_work_mem=64MB
+        -c max_connections=100
+        -c effective_cache_size=256MB
+        -c log_min_messages=warning
+        -c log_statement=none
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-sonar}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6380:6379"
+    deploy:
+      resources:
+        limits:
+          memory: 64M
+    command: >
+      redis-server
+        --maxmemory 48mb
+        --maxmemory-policy allkeys-lru
+        --save ""
+        --appendonly no
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8001:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./data:/app/data:ro
+    env_file:
+      - .env
+    environment:
+      APP_ENV: development
+      # Moderate scan intervals (balanced for Mac)
+      SCAN_INTERVAL_SECONDS: 180
+      FLIGHT_SCAN_INTERVAL: 300
+      VESSEL_SCAN_INTERVAL: 180
+      TENSION_UPDATE_INTERVAL: 300
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "1.5"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ""
+        VITE_WS_URL: ""
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:80"
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:80/ || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+      frontend:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+
+volumes:
+  postgres-data:
+  redis-data:
+
+networks:
+  default:
+    name: sonar-network

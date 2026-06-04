@@ -1,0 +1,6 @@
+Summarize the following geopolitical event in one clear, concise sentence for an intelligence dashboard. Include key actors, actions, and locations. Be factual, not speculative.
+
+EVENT: {text}
+SOURCE: {source}
+
+Respond with ONLY the summary sentence, no quotes or formatting.

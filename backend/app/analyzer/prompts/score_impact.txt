@@ -1,0 +1,19 @@
+You are SONAR impact assessment module. Score the geopolitical impact of this event on a scale of 0-100.
+
+EVENT: {text}
+CATEGORY: {category}
+SOURCE CREDIBILITY: {credibility}/10
+CORROBORATION: {corroboration} other sources reporting similar
+
+Consider:
+- Immediate threat to life/stability
+- Economic impact potential
+- Market-moving potential
+- Historical precedent severity
+- Geographic scope
+
+Respond with ONLY a JSON:
+{{
+  "impact_score": 0-100,
+  "reasoning": "brief explanation"
+}}

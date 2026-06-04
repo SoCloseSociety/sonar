@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/soclosesociety/sonar/discussions
+    about: Ideas, questions, and general chat
+  - name: 🛡️ Security vulnerability
+    url: https://github.com/soclosesociety/sonar/security/advisories/new
+    about: Private disclosure for security issues — please don't use public issues

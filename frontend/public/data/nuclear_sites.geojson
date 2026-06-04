@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "name": "Zaporizhzhia NPP", "country": "Ukraine", "type": "power_plant", "status": "occupied", "risk": "high" }, "geometry": { "type": "Point", "coordinates": [34.59, 47.51] } },
+    { "type": "Feature", "properties": { "name": "Chernobyl Exclusion Zone", "country": "Ukraine", "type": "exclusion_zone", "status": "monitored", "risk": "medium" }, "geometry": { "type": "Point", "coordinates": [30.1, 51.39] } },
+    { "type": "Feature", "properties": { "name": "Natanz Enrichment Facility", "country": "Iran", "type": "enrichment", "status": "active", "risk": "critical" }, "geometry": { "type": "Point", "coordinates": [51.73, 33.72] } },
+    { "type": "Feature", "properties": { "name": "Fordow Enrichment Facility", "country": "Iran", "type": "enrichment", "status": "active", "risk": "critical" }, "geometry": { "type": "Point", "coordinates": [51.58, 34.88] } },
+    { "type": "Feature", "properties": { "name": "Isfahan Nuclear Complex", "country": "Iran", "type": "conversion", "status": "active", "risk": "high" }, "geometry": { "type": "Point", "coordinates": [51.66, 32.65] } },
+    { "type": "Feature", "properties": { "name": "Bushehr NPP", "country": "Iran", "type": "power_plant", "status": "operational", "risk": "medium" }, "geometry": { "type": "Point", "coordinates": [50.89, 28.83] } },
+    { "type": "Feature", "properties": { "name": "Yongbyon Nuclear Complex", "country": "North Korea", "type": "research/enrichment", "status": "active", "risk": "critical" }, "geometry": { "type": "Point", "coordinates": [125.75, 39.8] } },
+    { "type": "Feature", "properties": { "name": "Punggye-ri Nuclear Test Site", "country": "North Korea", "type": "test_site", "status": "ready", "risk": "critical" }, "geometry": { "type": "Point", "coordinates": [129.1, 41.28] } },
+    { "type": "Feature", "properties": { "name": "Dimona Nuclear Research Center", "country": "Israel", "type": "research/weapons", "status": "active", "risk": "high" }, "geometry": { "type": "Point", "coordinates": [35.15, 31.0] } },
+    { "type": "Feature", "properties": { "name": "Kahuta Research Laboratories", "country": "Pakistan", "type": "enrichment", "status": "active", "risk": "high" }, "geometry": { "type": "Point", "coordinates": [73.38, 33.6] } },
+    { "type": "Feature", "properties": { "name": "Bhabha Atomic Research Centre", "country": "India", "type": "research", "status": "active", "risk": "medium" }, "geometry": { "type": "Point", "coordinates": [72.89, 19.01] } },
+    { "type": "Feature", "properties": { "name": "Lop Nur Nuclear Test Site", "country": "China", "type": "test_site", "status": "monitoring", "risk": "medium" }, "geometry": { "type": "Point", "coordinates": [89.75, 41.55] } },
+    { "type": "Feature", "properties": { "name": "Sarov (Arzamas-16)", "country": "Russia", "type": "weapons_design", "status": "active", "risk": "high" }, "geometry": { "type": "Point", "coordinates": [43.58, 54.93] } },
+    { "type": "Feature", "properties": { "name": "Mayak Nuclear Complex", "country": "Russia", "type": "reprocessing", "status": "active", "risk": "high" }, "geometry": { "type": "Point", "coordinates": [60.85, 55.71] } },
+    { "type": "Feature", "properties": { "name": "Sellafield", "country": "UK", "type": "reprocessing", "status": "decommissioning", "risk": "medium" }, "geometry": { "type": "Point", "coordinates": [-3.5, 54.42] } },
+    { "type": "Feature", "properties": { "name": "La Hague", "country": "France", "type": "reprocessing", "status": "active", "risk": "low" }, "geometry": { "type": "Point", "coordinates": [-1.88, 49.68] } },
+    { "type": "Feature", "properties": { "name": "Barakah NPP", "country": "UAE", "type": "power_plant", "status": "operational", "risk": "low" }, "geometry": { "type": "Point", "coordinates": [52.26, 23.96] } }
+  ]
+}

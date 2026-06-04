@@ -1,0 +1,27 @@
+.git
+.gitignore
+.vscode
+.idea
+*.swp
+.DS_Store
+*.log
+.env
+.env.*
+
+# Frontend
+frontend/node_modules
+frontend/dist
+frontend/.vite
+
+# Backend
+__pycache__
+*.pyc
+*.egg-info
+.pytest_cache
+htmlcov
+coverage
+
+# Docs
+README.md
+*.md
+docs/

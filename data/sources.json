@@ -1,0 +1,15 @@
+{
+  "rss_feeds": [
+    {"url": "https://feeds.reuters.com/reuters/worldNews", "name": "Reuters", "credibility": 9},
+    {"url": "https://feeds.bbci.co.uk/news/world/rss.xml", "name": "BBC World", "credibility": 9},
+    {"url": "https://www.aljazeera.com/xml/rss/all.xml", "name": "Al Jazeera", "credibility": 7},
+    {"url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "name": "NYTimes", "credibility": 9},
+    {"url": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?max=10&ContentType=1&Site=945", "name": "US DoD", "credibility": 8}
+  ],
+  "twitter_accounts": {
+    "geopolitics": ["sentdefender", "IntelCrab", "Osinttechnical", "conflicts", "AuroraIntel", "GeoConfirmed"],
+    "finance": ["zerohedge", "WatcherGuru", "unusual_whales", "DeItaone", "FirstSquawk"],
+    "crypto": ["whale_alert", "lookonchain", "zachxbt"]
+  },
+  "telegram_channels": ["intelslava", "SputnikInt", "CIG_telegram"]
+}

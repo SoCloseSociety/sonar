@@ -1,0 +1,176 @@
+[
+  {"name": "Kyiv — Maidan Nezalezhnosti", "lat": 50.4501, "lon": 30.5234, "country": "UA", "city": "Kyiv", "url": "https://www.youtube.com/watch?v=2cyiCGbw-Gc", "thumbnail": "", "type": "conflict"},
+  {"name": "Kyiv — Khreshchatyk Street", "lat": 50.4477, "lon": 30.5222, "country": "UA", "city": "Kyiv", "url": "https://www.youtube.com/watch?v=iZebYm-nenY", "thumbnail": "", "type": "conflict"},
+  {"name": "Odesa — Port Webcam", "lat": 46.4825, "lon": 30.7233, "country": "UA", "city": "Odesa", "url": "https://www.youtube.com/watch?v=ZK0eFV9VbXk", "thumbnail": "", "type": "maritime"},
+  {"name": "Kharkiv — Freedom Square", "lat": 50.0042, "lon": 36.2310, "country": "UA", "city": "Kharkiv", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Jerusalem — Western Wall", "lat": 31.7767, "lon": 35.2345, "country": "IL", "city": "Jerusalem", "url": "https://www.skylinewebcams.com/en/webcam/israel/jerusalem-district/jerusalem/western-wall.html", "thumbnail": "", "type": "conflict"},
+  {"name": "Tel Aviv — Beach Promenade", "lat": 32.0853, "lon": 34.7818, "country": "IL", "city": "Tel Aviv", "url": "https://www.skylinewebcams.com/en/webcam/israel/tel-aviv/tel-aviv/tel-aviv-beach.html", "thumbnail": "", "type": "city"},
+  {"name": "Haifa — Port", "lat": 32.7940, "lon": 34.9896, "country": "IL", "city": "Haifa", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Taipei — 101 Tower", "lat": 25.0330, "lon": 121.5654, "country": "TW", "city": "Taipei", "url": "https://www.youtube.com/watch?v=wSGYU0wNXSM", "thumbnail": "", "type": "strategic"},
+  {"name": "Kaohsiung — Port", "lat": 22.6148, "lon": 120.2966, "country": "TW", "city": "Kaohsiung", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Seoul — Gwanghwamun", "lat": 37.5759, "lon": 126.9769, "country": "KR", "city": "Seoul", "url": "https://www.youtube.com/watch?v=gFRtAAmiFbE", "thumbnail": "", "type": "strategic"},
+  {"name": "Panmunjom — DMZ Area", "lat": 37.9564, "lon": 126.6773, "country": "KR", "city": "Paju", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Busan — Port", "lat": 35.1028, "lon": 129.0403, "country": "KR", "city": "Busan", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Strait of Hormuz — Bandar Abbas", "lat": 27.1832, "lon": 56.2666, "country": "IR", "city": "Bandar Abbas", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Tehran — Azadi Tower", "lat": 35.6999, "lon": 51.3380, "country": "IR", "city": "Tehran", "url": "", "thumbnail": "", "type": "strategic"},
+
+  {"name": "Suez Canal — Port Said", "lat": 31.2653, "lon": 32.3019, "country": "EG", "city": "Port Said", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Suez Canal — Ismailia", "lat": 30.5965, "lon": 32.2715, "country": "EG", "city": "Ismailia", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Cairo — Tahrir Square", "lat": 30.0444, "lon": 31.2357, "country": "EG", "city": "Cairo", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Bab el-Mandeb — Djibouti Port", "lat": 11.5876, "lon": 43.1456, "country": "DJ", "city": "Djibouti", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Aden — Port", "lat": 12.7855, "lon": 45.0187, "country": "YE", "city": "Aden", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Strait of Malacca — Singapore", "lat": 1.2644, "lon": 103.8222, "country": "SG", "city": "Singapore", "url": "https://www.skylinewebcams.com/en/webcam/singapore/singapore/singapore/marina-bay.html", "thumbnail": "", "type": "maritime"},
+  {"name": "Singapore — Changi Airport", "lat": 1.3644, "lon": 103.9915, "country": "SG", "city": "Singapore", "url": "", "thumbnail": "", "type": "infrastructure"},
+
+  {"name": "Istanbul — Bosphorus", "lat": 41.0422, "lon": 29.0083, "country": "TR", "city": "Istanbul", "url": "https://www.youtube.com/watch?v=q_Nv0jpLgac", "thumbnail": "", "type": "maritime"},
+  {"name": "Istanbul — Hagia Sophia", "lat": 41.0086, "lon": 28.9802, "country": "TR", "city": "Istanbul", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Moscow — Red Square", "lat": 55.7539, "lon": 37.6208, "country": "RU", "city": "Moscow", "url": "https://www.youtube.com/watch?v=eNT2FLyaJBA", "thumbnail": "", "type": "strategic"},
+  {"name": "Moscow — Kremlin", "lat": 55.7520, "lon": 37.6175, "country": "RU", "city": "Moscow", "url": "", "thumbnail": "", "type": "government"},
+  {"name": "St. Petersburg — Palace Square", "lat": 59.9398, "lon": 30.3146, "country": "RU", "city": "St. Petersburg", "url": "", "thumbnail": "", "type": "city"},
+  {"name": "Sevastopol — Port", "lat": 44.6054, "lon": 33.5221, "country": "UA", "city": "Sevastopol", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "US Capitol — Washington DC", "lat": 38.8899, "lon": -77.0091, "country": "US", "city": "Washington DC", "url": "https://www.earthcam.com/usa/dc/capitol/", "thumbnail": "", "type": "government"},
+  {"name": "White House — Washington DC", "lat": 38.8977, "lon": -77.0365, "country": "US", "city": "Washington DC", "url": "", "thumbnail": "", "type": "government"},
+  {"name": "Pentagon — Arlington", "lat": 38.8719, "lon": -77.0563, "country": "US", "city": "Arlington", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Times Square — NYC", "lat": 40.7580, "lon": -73.9855, "country": "US", "city": "New York", "url": "https://www.earthcam.com/usa/newyork/timessquare/", "thumbnail": "", "type": "city"},
+  {"name": "Port of Los Angeles", "lat": 33.7405, "lon": -118.2728, "country": "US", "city": "Los Angeles", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Norfolk Naval Base", "lat": 36.9466, "lon": -76.3305, "country": "US", "city": "Norfolk", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "London — Parliament / Big Ben", "lat": 51.5007, "lon": -0.1246, "country": "GB", "city": "London", "url": "https://www.earthcam.com/world/england/london/", "thumbnail": "", "type": "government"},
+  {"name": "London — Tower Bridge", "lat": 51.5055, "lon": -0.0754, "country": "GB", "city": "London", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Paris — Eiffel Tower", "lat": 48.8584, "lon": 2.2945, "country": "FR", "city": "Paris", "url": "https://www.youtube.com/watch?v=wVkjRGaFg-c", "thumbnail": "", "type": "city"},
+  {"name": "Paris — Champs-Élysées", "lat": 48.8698, "lon": 2.3075, "country": "FR", "city": "Paris", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Berlin — Brandenburg Gate", "lat": 52.5163, "lon": 13.3777, "country": "DE", "city": "Berlin", "url": "", "thumbnail": "", "type": "government"},
+  {"name": "Brussels — EU Quarter", "lat": 50.8427, "lon": 4.3827, "country": "BE", "city": "Brussels", "url": "", "thumbnail": "", "type": "government"},
+  {"name": "NATO HQ — Brussels", "lat": 50.8799, "lon": 4.4283, "country": "BE", "city": "Brussels", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "Beijing — Tiananmen Square", "lat": 39.9054, "lon": 116.3976, "country": "CN", "city": "Beijing", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Shanghai — Bund", "lat": 31.2400, "lon": 121.4900, "country": "CN", "city": "Shanghai", "url": "", "thumbnail": "", "type": "city"},
+  {"name": "Hong Kong — Victoria Harbour", "lat": 22.2931, "lon": 114.1694, "country": "HK", "city": "Hong Kong", "url": "https://www.skylinewebcams.com/en/webcam/china/hong-kong/hong-kong/victoria-harbour.html", "thumbnail": "", "type": "maritime"},
+  {"name": "Shenzhen — Bay Area", "lat": 22.5431, "lon": 114.0579, "country": "CN", "city": "Shenzhen", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Tokyo — Shibuya Crossing", "lat": 35.6595, "lon": 139.7004, "country": "JP", "city": "Tokyo", "url": "https://www.youtube.com/watch?v=3n3kx2Eo-eg", "thumbnail": "", "type": "city"},
+  {"name": "Yokosuka — US Naval Base", "lat": 35.2819, "lon": 139.6647, "country": "JP", "city": "Yokosuka", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "New Delhi — India Gate", "lat": 28.6129, "lon": 77.2295, "country": "IN", "city": "New Delhi", "url": "", "thumbnail": "", "type": "government"},
+  {"name": "Mumbai — Gateway of India", "lat": 18.9220, "lon": 72.8347, "country": "IN", "city": "Mumbai", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Islamabad — Faisal Mosque", "lat": 33.7295, "lon": 73.0372, "country": "PK", "city": "Islamabad", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Tbilisi — Freedom Square", "lat": 41.6934, "lon": 44.8015, "country": "GE", "city": "Tbilisi", "url": "", "thumbnail": "", "type": "strategic"},
+
+  {"name": "Tallinn — Old Town", "lat": 59.4370, "lon": 24.7536, "country": "EE", "city": "Tallinn", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Kaliningrad — Port", "lat": 54.7104, "lon": 20.4522, "country": "RU", "city": "Kaliningrad", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "Panama Canal — Miraflores Locks", "lat": 9.0152, "lon": -79.5900, "country": "PA", "city": "Panama City", "url": "https://www.pancanal.com/eng/photo/camera-702.html", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Gibraltar — Strait", "lat": 36.1408, "lon": -5.3536, "country": "GI", "city": "Gibraltar", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Cape Town — Table Bay Port", "lat": -33.9078, "lon": 18.4292, "country": "ZA", "city": "Cape Town", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "São Paulo — Paulista Avenue", "lat": -23.5613, "lon": -46.6558, "country": "BR", "city": "São Paulo", "url": "", "thumbnail": "", "type": "city"},
+  {"name": "Rio de Janeiro — Copacabana", "lat": -22.9711, "lon": -43.1826, "country": "BR", "city": "Rio de Janeiro", "url": "https://www.skylinewebcams.com/en/webcam/brasil/rio-de-janeiro/rio-de-janeiro/copacabana.html", "thumbnail": "", "type": "city"},
+
+  {"name": "Svalbard — Longyearbyen", "lat": 78.2232, "lon": 15.6267, "country": "NO", "city": "Longyearbyen", "url": "", "thumbnail": "", "type": "arctic"},
+
+  {"name": "Ramstein Air Base", "lat": 49.4369, "lon": 7.6003, "country": "DE", "city": "Ramstein", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Incirlik Air Base", "lat": 37.0021, "lon": 35.4259, "country": "TR", "city": "Adana", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Diego Garcia", "lat": -7.3195, "lon": 72.4229, "country": "IO", "city": "Diego Garcia", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Guam — Andersen AFB", "lat": 13.5840, "lon": 144.9243, "country": "GU", "city": "Yigo", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "Beirut — Port", "lat": 33.9016, "lon": 35.5127, "country": "LB", "city": "Beirut", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Damascus — Umayyad Square", "lat": 33.5102, "lon": 36.2913, "country": "SY", "city": "Damascus", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Baghdad — Green Zone", "lat": 33.2975, "lon": 44.3660, "country": "IQ", "city": "Baghdad", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Dnipro — City Center", "lat": 48.4647, "lon": 35.0462, "country": "UA", "city": "Dnipro", "url": "https://www.youtube.com/watch?v=3sXxCXteyOc", "thumbnail": "", "type": "conflict"},
+  {"name": "Lviv — Rynok Square", "lat": 49.8417, "lon": 24.0316, "country": "UA", "city": "Lviv", "url": "https://www.youtube.com/watch?v=8kMGjJfMh3Y", "thumbnail": "", "type": "strategic"},
+  {"name": "Zaporizhzhia — City View", "lat": 47.8388, "lon": 35.1396, "country": "UA", "city": "Zaporizhzhia", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Mykolaiv — City Center", "lat": 46.9750, "lon": 31.9946, "country": "UA", "city": "Mykolaiv", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Chernihiv — Red Square", "lat": 51.4932, "lon": 31.2945, "country": "UA", "city": "Chernihiv", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Sumy — City View", "lat": 50.9077, "lon": 34.7981, "country": "UA", "city": "Sumy", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Kramatorsk — City Center", "lat": 48.7355, "lon": 37.5838, "country": "UA", "city": "Kramatorsk", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Rafah Crossing — Border Area", "lat": 31.2482, "lon": 34.2501, "country": "EG", "city": "Rafah", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Sderot — Southern Israel", "lat": 31.5245, "lon": 34.5984, "country": "IL", "city": "Sderot", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Ashkelon — Coastal View", "lat": 31.6688, "lon": 34.5743, "country": "IL", "city": "Ashkelon", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Eilat — Red Sea Port", "lat": 29.5577, "lon": 34.9519, "country": "IL", "city": "Eilat", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Ashdod — Port", "lat": 31.8035, "lon": 34.6444, "country": "IL", "city": "Ashdod", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Tyre — Southern Lebanon Coast", "lat": 33.2705, "lon": 35.2038, "country": "LB", "city": "Tyre", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Nabatieh — Southern Lebanon", "lat": 33.3778, "lon": 35.4836, "country": "LB", "city": "Nabatieh", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Amman — Citadel View", "lat": 31.9539, "lon": 35.9340, "country": "JO", "city": "Amman", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Riyadh — King Fahd Road", "lat": 24.7136, "lon": 46.6753, "country": "SA", "city": "Riyadh", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Abu Dhabi — Corniche", "lat": 24.4539, "lon": 54.3773, "country": "AE", "city": "Abu Dhabi", "url": "", "thumbnail": "", "type": "city"},
+  {"name": "Doha — Corniche", "lat": 25.2932, "lon": 51.5310, "country": "QA", "city": "Doha", "url": "", "thumbnail": "", "type": "city"},
+
+  {"name": "Sanaa — Tahrir Square", "lat": 15.3694, "lon": 44.1910, "country": "YE", "city": "Sanaa", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Hodeidah — Port", "lat": 14.7980, "lon": 42.9540, "country": "YE", "city": "Hodeidah", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Khartoum — Confluence (Blue/White Nile)", "lat": 15.6177, "lon": 32.5340, "country": "SD", "city": "Khartoum", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Port Sudan — Red Sea Port", "lat": 19.6158, "lon": 37.2163, "country": "SD", "city": "Port Sudan", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Goma — DRC / Rwanda Border", "lat": -1.6771, "lon": 29.2384, "country": "CD", "city": "Goma", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Bukavu — Lake Kivu", "lat": -2.5083, "lon": 28.8608, "country": "CD", "city": "Bukavu", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Mogadishu — Lido Beach", "lat": 2.0469, "lon": 45.3182, "country": "SO", "city": "Mogadishu", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Bossaso — Port of Puntland", "lat": 11.2840, "lon": 49.1791, "country": "SO", "city": "Bossaso", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Yangon — Sule Pagoda", "lat": 16.8661, "lon": 96.1951, "country": "MM", "city": "Yangon", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Mandalay — City View", "lat": 21.9588, "lon": 96.0891, "country": "MM", "city": "Mandalay", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Naypyidaw — Government Quarter", "lat": 19.7633, "lon": 96.0785, "country": "MM", "city": "Naypyidaw", "url": "", "thumbnail": "", "type": "government"},
+
+  {"name": "Bamako — Independence Square", "lat": 12.6392, "lon": -8.0029, "country": "ML", "city": "Bamako", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Ouagadougou — Place de la Nation", "lat": 12.3714, "lon": -1.5197, "country": "BF", "city": "Ouagadougou", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Niamey — Kennedy Bridge", "lat": 13.5137, "lon": 2.1098, "country": "NE", "city": "Niamey", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Addis Ababa — Meskel Square", "lat": 9.0100, "lon": 38.7612, "country": "ET", "city": "Addis Ababa", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Mekelle — Tigray Capital", "lat": 13.4967, "lon": 39.4753, "country": "ET", "city": "Mekelle", "url": "", "thumbnail": "", "type": "conflict"},
+
+  {"name": "Riga — Old Town", "lat": 56.9496, "lon": 24.1052, "country": "LV", "city": "Riga", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Vilnius — Cathedral Square", "lat": 54.6856, "lon": 25.2878, "country": "LT", "city": "Vilnius", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Helsinki — Senate Square", "lat": 60.1695, "lon": 24.9527, "country": "FI", "city": "Helsinki", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Warsaw — Old Town Market", "lat": 52.2500, "lon": 21.0122, "country": "PL", "city": "Warsaw", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Rzeszów — Polish-Ukrainian Border Hub", "lat": 50.0412, "lon": 21.9991, "country": "PL", "city": "Rzeszów", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "Murmansk — Kola Bay", "lat": 68.9585, "lon": 33.0827, "country": "RU", "city": "Murmansk", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Vladivostok — Golden Horn Bay", "lat": 43.1056, "lon": 131.8735, "country": "RU", "city": "Vladivostok", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Novorossiysk — Naval Base Port", "lat": 44.7237, "lon": 37.7686, "country": "RU", "city": "Novorossiysk", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "Xiamen — Taiwan Strait View", "lat": 24.4797, "lon": 118.0819, "country": "CN", "city": "Xiamen", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Haikou — South China Sea", "lat": 20.0440, "lon": 110.3500, "country": "CN", "city": "Haikou", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Kinmen — Offshore Island", "lat": 24.4493, "lon": 118.3764, "country": "TW", "city": "Kinmen", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "Incheon — Port / Airport", "lat": 37.4563, "lon": 126.7052, "country": "KR", "city": "Incheon", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Pyongyang — Kim Il-Sung Square (est.)", "lat": 39.0194, "lon": 125.7547, "country": "KP", "city": "Pyongyang", "url": "", "thumbnail": "", "type": "strategic"},
+
+  {"name": "Tripoli — Green Square", "lat": 32.8872, "lon": 13.1913, "country": "LY", "city": "Tripoli", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Benghazi — Port", "lat": 32.1167, "lon": 20.0667, "country": "LY", "city": "Benghazi", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Tunis — Habib Bourguiba Ave.", "lat": 36.8065, "lon": 10.1815, "country": "TN", "city": "Tunis", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Algiers — Port", "lat": 36.7525, "lon": 3.0420, "country": "DZ", "city": "Algiers", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Karachi — Port", "lat": 24.8355, "lon": 67.0046, "country": "PK", "city": "Karachi", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Srinagar — Kashmir", "lat": 34.0837, "lon": 74.7973, "country": "IN", "city": "Srinagar", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Leh — Ladakh", "lat": 34.1526, "lon": 77.5771, "country": "IN", "city": "Leh", "url": "", "thumbnail": "", "type": "military"},
+
+  {"name": "Narva — Estonia-Russia Border", "lat": 59.3796, "lon": 28.1791, "country": "EE", "city": "Narva", "url": "", "thumbnail": "", "type": "strategic"},
+  {"name": "Gdynia — Polish Naval Base", "lat": 54.5189, "lon": 18.5305, "country": "PL", "city": "Gdynia", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Tromsø — Arctic Gateway", "lat": 69.6492, "lon": 18.9553, "country": "NO", "city": "Tromsø", "url": "", "thumbnail": "", "type": "arctic"},
+
+  {"name": "Djibouti — Naval Base Area", "lat": 11.5480, "lon": 43.1165, "country": "DJ", "city": "Djibouti", "url": "", "thumbnail": "", "type": "military"},
+  {"name": "Berbera — Somaliland Port", "lat": 10.4394, "lon": 45.0370, "country": "SO", "city": "Berbera", "url": "", "thumbnail": "", "type": "maritime"},
+
+  {"name": "Colombo — Port", "lat": 6.9407, "lon": 79.8425, "country": "LK", "city": "Colombo", "url": "", "thumbnail": "", "type": "maritime"},
+  {"name": "Hambantota — Chinese-Built Port", "lat": 6.1167, "lon": 81.1167, "country": "LK", "city": "Hambantota", "url": "", "thumbnail": "", "type": "strategic"},
+
+  {"name": "Mariupol — Destroyed City (Recov.)", "lat": 47.0958, "lon": 37.5438, "country": "UA", "city": "Mariupol", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Kherson — Liberated City", "lat": 46.6354, "lon": 32.6169, "country": "UA", "city": "Kherson", "url": "", "thumbnail": "", "type": "conflict"},
+  {"name": "Pokrovsk — Front Line City", "lat": 48.2840, "lon": 37.1743, "country": "UA", "city": "Pokrovsk", "url": "", "thumbnail": "", "type": "conflict"}
+]

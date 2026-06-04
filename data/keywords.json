@@ -1,0 +1,12 @@
+{
+  "military": ["missile", "strike", "airstrike", "troops", "deploy", "invasion", "offensive", "ceasefire", "nato", "artillery", "drone", "fighter jet", "bombing", "military", "warship", "carrier", "submarine"],
+  "nuclear": ["nuclear", "uranium", "enrichment", "IAEA", "warhead", "radiation", "plutonium", "reactor", "missile test", "ICBM"],
+  "sanctions": ["sanctions", "embargo", "blacklist", "OFAC", "trade war", "tariff", "ban", "restrict"],
+  "diplomatic": ["summit", "treaty", "alliance", "ambassador", "diplomat", "negotiation", "UN Security Council", "bilateral"],
+  "terrorism": ["attack", "bombing", "hostage", "extremist", "terrorist", "ISIS", "al-Qaeda", "insurgent"],
+  "energy": ["oil", "crude", "OPEC", "pipeline", "natural gas", "LNG", "refinery", "barrel", "energy crisis"],
+  "maritime": ["strait", "chokepoint", "blockade", "piracy", "naval", "fleet", "AIS", "tanker", "cargo ship"],
+  "election": ["election", "vote", "ballot", "candidate", "poll", "referendum", "inauguration"],
+  "economic": ["interest rate", "inflation", "GDP", "recession", "central bank", "federal reserve", "ECB", "default", "debt"],
+  "crypto": ["bitcoin", "ethereum", "crypto", "DeFi", "exchange", "hack", "whale", "stablecoin", "regulation"]
+}

@@ -1,0 +1,46 @@
+name: 🐛 Bug report
+description: Something is broken or behaves unexpectedly
+labels: [bug, triage]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what actually happened?
+      placeholder: I expected X, but got Y.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. `docker compose up -d`
+        2. Open http://localhost
+        3. Click X
+        4. See error Y
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Output of `docker compose logs --tail=100 backend` (redact secrets!)
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Commit SHA / version
+      placeholder: e.g. main @ abc1234
+  - type: dropdown
+    id: env
+    attributes:
+      label: Environment
+      options:
+        - macOS (Docker Desktop)
+        - macOS (Colima)
+        - Linux (Docker Engine)
+        - Windows (Docker Desktop / WSL2)
+        - Other
+    validations:
+      required: true

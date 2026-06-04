@@ -1,0 +1,21 @@
+You are SONAR market correlation module. Given this event and list of Polymarket prediction markets, identify which markets are impacted and estimate fair value shifts.
+
+EVENT: {text}
+CATEGORY: {category}
+SEVERITY: {severity}/10
+
+CANDIDATE MARKETS:
+{markets}
+
+For each correlated market, estimate how this event should shift the probability. Respond with ONLY a JSON array:
+[
+  {{
+    "condition_id": "...",
+    "estimated_fair_value": 0.0-1.0,
+    "confidence": 0.0-1.0,
+    "direction": "BUY_YES or BUY_NO",
+    "reasoning": "brief explanation"
+  }}
+]
+
+If no markets are correlated, return an empty array: []

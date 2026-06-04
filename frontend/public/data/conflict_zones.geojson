@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Eastern Ukraine", "conflict": "Russia-Ukraine War", "severity": 9 },
+      "geometry": { "type": "Polygon", "coordinates": [[[35.0,51.5],[40.0,51.5],[40.5,49.0],[39.5,47.0],[37.5,46.5],[35.0,47.5],[34.0,49.0],[35.0,51.5]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Gaza Strip", "conflict": "Israel-Palestine", "severity": 10 },
+      "geometry": { "type": "Polygon", "coordinates": [[[34.2,31.6],[34.6,31.6],[34.6,31.2],[34.2,31.2],[34.2,31.6]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Southern Lebanon", "conflict": "Israel-Hezbollah", "severity": 8 },
+      "geometry": { "type": "Polygon", "coordinates": [[[35.1,33.9],[36.6,33.9],[36.6,33.05],[35.1,33.05],[35.1,33.9]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Red Sea / Bab el-Mandeb", "conflict": "Houthi Maritime Attacks", "severity": 8 },
+      "geometry": { "type": "Polygon", "coordinates": [[[42.0,16.0],[44.0,16.0],[44.5,12.0],[43.5,11.5],[42.5,12.5],[42.0,16.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Taiwan Strait", "conflict": "China-Taiwan Tensions", "severity": 6 },
+      "geometry": { "type": "Polygon", "coordinates": [[[118.0,26.0],[121.0,26.0],[121.0,23.0],[118.0,23.0],[118.0,26.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Korean DMZ", "conflict": "North-South Korea", "severity": 5 },
+      "geometry": { "type": "Polygon", "coordinates": [[[124.5,38.5],[129.5,38.5],[129.5,37.5],[124.5,37.5],[124.5,38.5]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "South China Sea - Spratly", "conflict": "Territorial Disputes", "severity": 5 },
+      "geometry": { "type": "Polygon", "coordinates": [[[109.0,14.0],[118.0,14.0],[118.0,7.0],[109.0,7.0],[109.0,14.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Syria - Idlib", "conflict": "Syrian Civil War", "severity": 7 },
+      "geometry": { "type": "Polygon", "coordinates": [[[35.7,36.5],[37.0,36.5],[37.0,35.5],[35.7,35.5],[35.7,36.5]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Sudan - Khartoum/Darfur", "conflict": "Sudanese Civil War", "severity": 8 },
+      "geometry": { "type": "Polygon", "coordinates": [[[28.0,16.0],[34.0,16.0],[34.0,10.0],[28.0,10.0],[28.0,16.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Eastern DRC", "conflict": "M23/Armed Groups", "severity": 7 },
+      "geometry": { "type": "Polygon", "coordinates": [[[27.5,2.0],[30.5,2.0],[30.5,-5.0],[27.5,-5.0],[27.5,2.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Myanmar - Shan/Rakhine", "conflict": "Myanmar Civil War", "severity": 7 },
+      "geometry": { "type": "Polygon", "coordinates": [[[94.0,22.0],[100.0,22.0],[100.0,17.0],[94.0,17.0],[94.0,22.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Somalia - Al-Shabaab", "conflict": "Insurgency", "severity": 6 },
+      "geometry": { "type": "Polygon", "coordinates": [[[42.0,6.0],[48.0,6.0],[48.0,0.0],[42.0,0.0],[42.0,6.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Sahel Region", "conflict": "Jihadist Insurgency", "severity": 6 },
+      "geometry": { "type": "Polygon", "coordinates": [[[-2.0,18.0],[4.0,18.0],[4.0,12.0],[-2.0,12.0],[-2.0,18.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Iran-Pakistan Border", "conflict": "Cross-border Strikes", "severity": 5 },
+      "geometry": { "type": "Polygon", "coordinates": [[[58.0,28.0],[62.0,28.0],[62.0,25.0],[58.0,25.0],[58.0,28.0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Strait of Hormuz", "conflict": "Maritime Tensions", "severity": 7 },
+      "geometry": { "type": "Polygon", "coordinates": [[[54.0,27.5],[57.0,27.5],[57.0,25.5],[54.0,25.5],[54.0,27.5]]] }
+    }
+  ]
+}

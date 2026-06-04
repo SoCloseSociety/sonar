@@ -1,0 +1,85 @@
+# ─────────────────────────────────────────────
+# SECRETS — NEVER commit these
+# ─────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.development
+.env.*.local
+*.env
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key.pem
+*.cert
+id_rsa*
+id_ed25519*
+
+# ─────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ─────────────────────────────────────────────
+# Node / Frontend
+# ─────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+*.tsbuildinfo
+
+# ─────────────────────────────────────────────
+# Docker / Data
+# ─────────────────────────────────────────────
+postgres-data/
+redis-data/
+docker-compose.override.yml
+
+# ─────────────────────────────────────────────
+# IDE / OS
+# ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────────
+# Logs / Coverage / Cache
+# ─────────────────────────────────────────────
+*.log
+logs/
+htmlcov/
+.coverage
+coverage/
+
+# ─────────────────────────────────────────────
+# Alembic
+# ─────────────────────────────────────────────
+backend/alembic/versions/__pycache__/
+
+# ─────────────────────────────────────────────
+# Personal / scratch
+# ─────────────────────────────────────────────
+tasks/lessons.md
+tasks/todo.md
+NOTES.md
+TODO.md
+.claude/

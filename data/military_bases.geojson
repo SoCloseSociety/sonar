@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "name": "Ramstein Air Base", "country": "Germany", "branch": "USAF", "type": "air" }, "geometry": { "type": "Point", "coordinates": [7.6, 49.44] } },
+    { "type": "Feature", "properties": { "name": "Camp Humphreys", "country": "South Korea", "branch": "US Army", "type": "ground" }, "geometry": { "type": "Point", "coordinates": [127.05, 36.96] } },
+    { "type": "Feature", "properties": { "name": "Yokosuka Naval Base", "country": "Japan", "branch": "US Navy", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [139.67, 35.28] } },
+    { "type": "Feature", "properties": { "name": "Diego Garcia", "country": "BIOT", "branch": "US/UK Joint", "type": "air/naval" }, "geometry": { "type": "Point", "coordinates": [72.41, -7.31] } },
+    { "type": "Feature", "properties": { "name": "Al Udeid Air Base", "country": "Qatar", "branch": "USAF", "type": "air" }, "geometry": { "type": "Point", "coordinates": [51.31, 25.12] } },
+    { "type": "Feature", "properties": { "name": "Naval Support Activity Bahrain", "country": "Bahrain", "branch": "US Navy 5th Fleet", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [50.6, 26.2] } },
+    { "type": "Feature", "properties": { "name": "Incirlik Air Base", "country": "Turkey", "branch": "USAF/Turkish AF", "type": "air" }, "geometry": { "type": "Point", "coordinates": [35.43, 37.0] } },
+    { "type": "Feature", "properties": { "name": "Kadena Air Base", "country": "Japan (Okinawa)", "branch": "USAF", "type": "air" }, "geometry": { "type": "Point", "coordinates": [127.77, 26.35] } },
+    { "type": "Feature", "properties": { "name": "Guam - Andersen AFB", "country": "US Territory", "branch": "USAF", "type": "air" }, "geometry": { "type": "Point", "coordinates": [144.93, 13.58] } },
+    { "type": "Feature", "properties": { "name": "Djibouti - Camp Lemonnier", "country": "Djibouti", "branch": "US AFRICOM", "type": "joint" }, "geometry": { "type": "Point", "coordinates": [43.15, 11.55] } },
+    { "type": "Feature", "properties": { "name": "Norfolk Naval Station", "country": "USA", "branch": "US Navy", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [-76.33, 36.95] } },
+    { "type": "Feature", "properties": { "name": "Pearl Harbor", "country": "USA", "branch": "US Navy/Pacific Fleet", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [-157.95, 21.35] } },
+    { "type": "Feature", "properties": { "name": "Sevastopol Naval Base", "country": "Crimea (contested)", "branch": "Russian Navy", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [33.52, 44.62] } },
+    { "type": "Feature", "properties": { "name": "Tartus Naval Facility", "country": "Syria", "branch": "Russian Navy", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [35.89, 34.89] } },
+    { "type": "Feature", "properties": { "name": "Hmeimim Air Base", "country": "Syria", "branch": "Russian Aerospace Forces", "type": "air" }, "geometry": { "type": "Point", "coordinates": [35.95, 35.41] } },
+    { "type": "Feature", "properties": { "name": "Kaliningrad", "country": "Russia", "branch": "Russian Baltic Fleet", "type": "naval/air" }, "geometry": { "type": "Point", "coordinates": [20.5, 54.71] } },
+    { "type": "Feature", "properties": { "name": "Vladivostok Pacific Fleet", "country": "Russia", "branch": "Russian Navy", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [131.87, 43.11] } },
+    { "type": "Feature", "properties": { "name": "Murmansk / Severomorsk", "country": "Russia", "branch": "Russian Northern Fleet", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [33.42, 69.07] } },
+    { "type": "Feature", "properties": { "name": "Yulin Naval Base", "country": "China (Hainan)", "branch": "PLA Navy", "type": "naval/submarine" }, "geometry": { "type": "Point", "coordinates": [109.53, 18.23] } },
+    { "type": "Feature", "properties": { "name": "Zhanjiang Naval Base", "country": "China", "branch": "PLA Southern Theater Navy", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [110.4, 21.2] } },
+    { "type": "Feature", "properties": { "name": "Djibouti PLA Support Base", "country": "Djibouti", "branch": "PLA", "type": "joint" }, "geometry": { "type": "Point", "coordinates": [43.08, 11.59] } },
+    { "type": "Feature", "properties": { "name": "Ream Naval Base", "country": "Cambodia", "branch": "PLA Navy (suspected)", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [103.57, 10.51] } },
+    { "type": "Feature", "properties": { "name": "RAF Akrotiri", "country": "Cyprus", "branch": "RAF", "type": "air" }, "geometry": { "type": "Point", "coordinates": [32.98, 34.59] } },
+    { "type": "Feature", "properties": { "name": "HMNB Clyde (Faslane)", "country": "UK", "branch": "Royal Navy/Nuclear Submarine", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [-4.82, 56.07] } },
+    { "type": "Feature", "properties": { "name": "Toulon Naval Base", "country": "France", "branch": "French Navy", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [5.93, 43.1] } },
+    { "type": "Feature", "properties": { "name": "Bandar Abbas", "country": "Iran", "branch": "IRIN", "type": "naval" }, "geometry": { "type": "Point", "coordinates": [56.28, 27.18] } },
+    { "type": "Feature", "properties": { "name": "Natanz Nuclear Facility", "country": "Iran", "branch": "AEOI", "type": "nuclear" }, "geometry": { "type": "Point", "coordinates": [51.73, 33.72] } },
+    { "type": "Feature", "properties": { "name": "Punggye-ri Test Site", "country": "North Korea", "branch": "KPA", "type": "nuclear" }, "geometry": { "type": "Point", "coordinates": [129.1, 41.28] } }
+  ]
+}
