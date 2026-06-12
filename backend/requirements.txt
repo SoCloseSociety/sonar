@@ -42,7 +42,7 @@ psutil==7.0.0
 # Utilities
 pydantic[email]==2.10.4
 pydantic-settings==2.7.1
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 orjson==3.10.12
 
 # Testing
