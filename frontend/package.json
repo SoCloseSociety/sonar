@@ -22,7 +22,7 @@
     "react-dom": "^18.3.1",
     "react-globe.gl": "^2.37.0",
     "react-router-dom": "^6.28.0",
-    "recharts": "^2.14.1",
+    "recharts": "^3.8.1",
     "socket.io-client": "^4.8.1",
     "three": "^0.183.2",
     "zustand": "^5.0.2"
