@@ -262,3 +262,13 @@ TENSION_UPDATE_INTERVAL, FLIGHT_SCAN_INTERVAL, VESSEL_SCAN_INTERVAL
 - **No over-engineering:** don't add features, refactor code, or make "improvements" beyond what was asked
 - **Security conscious:** no command injection, no XSS, no SQL injection, never commit secrets
 - **French-speaking user:** understand French instructions, respond in English unless asked otherwise
+
+## Neo Connector (auto)
+This project exposes `NEO_CONNECTOR.md`: the machine-readable manifest of ALL its
+endpoints/auth/env, consumed by NeoBot (the Neo agent) to wire itself automatically.
+- RULE: on every add/remove/change of an endpoint, an auth scheme, or an env var,
+  regenerate the manifest via `/neo-connector` (or the prompt in `.claude/skills/neo-connector/SKILL.md`).
+- Never hand-edit `NEO_CONNECTOR.md`: it is generated -- everything must be proven from code, never invented.
+- The pre-commit hook (`.git/hooks/pre-commit`) warns if routes changed without updating the manifest.
+- SONAR is a self-hosted FastAPI backend (no public prod domain yet). Trading endpoints place
+  REAL on-chain Polymarket orders -- they must NOT be wired as unattended Neo tools.
