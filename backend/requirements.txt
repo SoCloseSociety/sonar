@@ -10,7 +10,7 @@ geoalchemy2==0.15.2
 alembic==1.14.1
 
 # Redis
-redis[hiredis]==5.2.1
+redis[hiredis]==8.0.0
 
 # WebSocket
 python-socketio[asyncio]==5.12.0
