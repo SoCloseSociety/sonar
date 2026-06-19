@@ -47,4 +47,4 @@ orjson==3.10.12
 
 # Testing
 pytest==8.3.4
-pytest-asyncio==0.25.0
+pytest-asyncio==1.4.0
