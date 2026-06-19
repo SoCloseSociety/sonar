@@ -37,7 +37,7 @@ telethon==1.38.1
 scikit-learn==1.6.1
 
 # System monitoring
-psutil==7.0.0
+psutil==7.2.2
 
 # Utilities
 pydantic[email]==2.10.4
