@@ -1,11 +1,11 @@
-FROM node:22-alpine AS dev
+FROM node:25-alpine AS dev
 WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm install
 COPY . .
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
-FROM node:22-alpine AS build
+FROM node:25-alpine AS build
 WORKDIR /app
 ARG VITE_API_URL=
 ARG VITE_WS_URL=
